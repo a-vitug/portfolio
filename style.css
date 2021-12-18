@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: left;
+    margin: 5px;
+    padding: 3%;
+    border: 10px;
+    color: white;
+    background-color: rgb(148, 144, 206);
+    text-shadow: 20px 20px rgb(34, 47, 66);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 1%;
+    list-style-type: circle;
+}
+
+nav li {
+    display: fixed;
+    position: relative;
+}
+
+.hyperlink {
+    display: inline;
+    text-decoration: none;
+    color: rgb(34, 47, 66);
+    font-weight: bold;
+}
+
+/*a:link, a:visited {
+    background-color: rgb(131, 124, 231);
+    padding: 14px 30px;
+}*/
+
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(119, 114, 184);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+a:hover, a:active {
+    background-color: rgb(119, 114, 184);
+    color: white;
+}
