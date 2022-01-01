@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portfolio</title>
+        <title>Allyson Vitug</title>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="./reset.css">
         <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
+
 <body>
+
+    <!-- Navigation bar -->
     <header>
         <nav>
-            <h1>Welcome to my Portfolio!</h1>
-            <ul>
-                <li><a class="hyperlink" href="file:///C:/Users/A/Bootcamp/portfolio/index.html">Home</a></li>
-                <li><a class="hyperlink" href="#">Projects</a></li>
-                <li><a class="hyperlink" href="https://www.linkedin.com/in/vtg-allyson/">Contact</a></li>
+            <img class="pic" src="./welcome-image.png" alt= "welcome" height= "110px" width= "230px"></img>
+            <ul class="navbar">
+    
+                <li><a class="hyperlink" href="./index.html">⌂ Home</a></li>
+
+                <li><a class="hyperlink" href="#about">✎ About</a></li>
+
+                <li><a class="hyperlink" href="#contact">✆ Contact</a></li>
+           
             </ul>
         </nav>
     </header>
+
+    <!-- Main Background -->
+    <section>
+        <nav class= "container">
+            <img id="radius" src="./background.jpeg" alt= "background" height="800px" width="1420px">
+            <h1> < projects > </projects></h1>
+        </nav>
+    </section>
+
+    <!-- About me page -->
+    <main>
+        <div class="outline">
+            <img id= "about" class="me" src="./avatar.jpeg" alt= "me" height="270px" width="270px">
+            <h2> < code > </h2>
+            <p>an aspiring <strong>software developer</strong></p>
+        </div>
+    </main>
+
+    <!-- Contact us page -->
+    <section>
+        <form id="contact">
+            <ul>
+                <label for= "name">Name:</label>
+                <input class="box" type="text" name="user-name" placeholder="Full Name">
+            </ul>
+            <ul>
+                <label for="email">Email:</label>
+                <input class="box" type="text" name="user-email" placeholder="Email Address">
+            </ul>
+            <ul>
+                <label for="comment">Comment:</label>
+                <input class="box" type="text" name="user-comment" placeholder="Any comments?">
+            </ul>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            <div>
+                <a href="https://github.com/a-vitug">
+                <img class="logo" src="./github-logo.png" height="50px" width="50px"></a>
+                
+                <a href="https://www.linkedin.com/in/vtg-allyson/">
+                <img class="logo" src="./linkedin-logo.png" height="50px" width="50px"></a>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        © 2022 Allyson Vitug
+    </footer>
+
 </body>
+
 
 </html>
