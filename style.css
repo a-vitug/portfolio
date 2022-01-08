@@ -135,7 +135,9 @@ p {
 
 /* start of contact us section */
 form ul {
-    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    margin: 10px 50px 10px 10px;
     padding: 10px;
 }
 
@@ -148,11 +150,19 @@ form {
     font-weight: bold;
 }
 
+h3 {
+    text-align: justify;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+    font-size: 3em;
+}
+
 .box {
     margin: 5px;
     padding: 7px 4px;
     width: 200px;
-    border: 1px dashed var(--olive);
+    border: 1px dashed var(--white);
     border-radius: 5%;
 }
 
@@ -169,14 +179,14 @@ button {
     color: #FAEBE0;
 }
 
-/*@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .border {
         display: inline-flex;
-        flex-flow: column wrap;
+        flex-flow: wrap;
         grid-gap: 15px;
         background-color: rgb(148, 144, 206);
     }
     ul {
         text-align: right;
     }
-}*/
+}
