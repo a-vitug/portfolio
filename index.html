@@ -36,36 +36,40 @@
     <!-- About me page -->
     <main>
         <div class="outline" id= "about">
-            <img class="me" src="./img/avatar.jpeg" alt= "me" height="270px" width="270px">
             <h2> < code > </h2>
             <p>an aspiring <strong>software developer</strong></p>
         </div>
+        <img class="me" src="./img/avatar.jpeg" alt= "me" height="280px" width="280px">
+
     </main>
 
     <!-- Contact us page -->
-    <section>
+    <section class="section-parent">
         <form id="contact">
             <h3>
                 Let's create <br>
                 something great <br>
                 together! <br>
             </h3>
+            <div class="form">
+                <ul>
+                    <label for= "name">Name:</label>
+                    <input class="box" type="text" name="user-name" placeholder="Full Name">
+                </ul>
+                <ul>
+                    <label for="email">Email:</label>
+                    <input class="box" type="text" name="user-email" placeholder="Email Address">
+                </ul>
+                <ul>
+                    <label for="comment">Comment:</label>
+                    <input class="box" type="text" name="user-comment" placeholder="Any comments?">
+                </ul>
 
-            <ul>
-                <label for= "name">Name:</label>
-                <input class="box" type="text" name="user-name" placeholder="Full Name">
-            </ul>
-            <ul>
-                <label for="email">Email:</label>
-                <input class="box" type="text" name="user-email" placeholder="Email Address">
-            </ul>
-            <ul>
-                <label for="comment">Comment:</label>
-                <input class="box" type="text" name="user-comment" placeholder="Any comments?">
-            </ul>
-            <div>
-                <button type="submit">Submit</button>
+                <button id="submitBtn" type="submit">Submit</button>
+
             </div>
+           
+
             <div>
                 <a href="https://github.com/a-vitug">
                 <img class="logo" src="./img/github-logo.png" height="50px" width="50px"></a>
@@ -79,6 +83,8 @@
     <footer>
         © 2022 Allyson Vitug
     </footer>
+
+    <script src = "./script.js"></script>
 
 </body>
 

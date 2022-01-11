@@ -2,6 +2,7 @@
     --white: #F4EEED;
     --peach: #D8AC9C;
     --olive: #B2B8A3;
+    --brown: #C1AC95;
 }
 
 body {
@@ -103,67 +104,90 @@ h1:hover, h1:active {
 /* start of about me section */
 main {
     margin: 0px;
-    padding: 250px;
+    padding: 200px;
     background-color: #FAEBE0;
 }
 
 .me {
+    padding: 15px;
+    padding-bottom: 50px;
+    border: 1px solid var(--olive);
+    border-radius: 2%;
+    background-color: var(--olive);
+}
+/*.me {
     padding: 20px;
     border: 1px dotted var(--olive);
     border-radius: 15%;
-}
+}*/
 
 
 h2 {
+    margin-top: 50px;
+    margin-right: 50px;
     float: right;
     color: var(--olive);
-    font-size: 5em;
+    font-size: 6em;
     text-align: center;
 }
 
 p {
     float: right;
-    padding: 2em;
+    padding: 30px;
     color: #FAEBE0;
     background-color: var(--olive);
     font-size: 1em;
     text-align: center;
-    width: 700px;
+    width: 600px;
     font-family: American Typewriter, serif;
 }
 
 
 /* start of contact us section */
-form ul {
-    display: flex;
-    flex-flow: column;
-    margin: 10px 50px 10px 10px;
-    padding: 10px;
-}
-
-form {
+.section-parent {
     color: #FAEBE0;
     margin: 0px;
-    padding: 30px;
+    padding: 80px;
     border: 5px;
     background: 90px var(--olive);
-    font-weight: bold;
 }
 
+form ul {
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
 h3 {
+    float: left;
     text-align: justify;
-    white-space: nowrap;
-    margin: 0px;
-    padding: 0px;
-    font-size: 3em;
+    margin: 0px 40px;
+    margin-left: 200px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 65px;
+}
+
+.form {
+    margin: 10px;
+    padding: 70px;
 }
 
 .box {
     margin: 5px;
-    padding: 7px 4px;
+    padding: 6px 3px;
     width: 200px;
     border: 1px dashed var(--white);
     border-radius: 5%;
+}
+
+#submitBtn {
+    float: right;
+    margin: 10px;
+    margin-right: 100px;
 }
 
 button {
@@ -179,14 +203,45 @@ button {
     color: #FAEBE0;
 }
 
+footer {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
 @media screen and (max-width: 900px) {
-    .border {
-        display: inline-flex;
-        flex-flow: wrap;
-        grid-gap: 15px;
-        background-color: rgb(148, 144, 206);
+/* start of nav*/
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 5px ;
     }
-    ul {
-        text-align: right;
+
+/* start of main*/
+    h1 {
+        display: flex;
+        flex: wrap;
+        margin: 10px;
+        padding: 20px;
+        font-size: 35px;
+    }
+/* about me*/
+    h2 {
+        padding: 0px;
+        font-size: 45px;
+    }
+
+    p {
+        padding: 20px;
+        width: 300px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        padding: 20px;
+        font-size: 25px;
     }
 }
