@@ -13,6 +13,7 @@ header nav {
     position: absolute;
     padding: 2em;
     z-index: 1;
+    background-color: var(--brown); opacity: 0.85;
 }
 
 .pic {
@@ -24,10 +25,10 @@ header nav {
 .navbar {
     display: flex;
     flex-direction: row;
-    position: fixed;
-    background-color: var(--white); opacity: 0.8;
-    border-radius: 15%;
-    box-shadow: 0px 0px 0px 10px var(--olive); opacity: 0.6;
+    /*position: fixed;*/
+    background-color: var(--brown); opacity: 0.85;
+    /*border-radius: 15%;*/
+    /* box-shadow: 0px 0px 0px 10px var(--olive); opacity: 0.6; */
     margin: 0px;
     padding: 1em;
     list-style-type: none;
@@ -38,7 +39,7 @@ header nav {
     text-decoration: none;
     color: #C1AC95;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bolder;
 } 
 
 header nav {
@@ -46,7 +47,7 @@ header nav {
 }
 
 a:link, a:visited {
-    color: var(--peach);
+    color: var(--white);
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
@@ -63,13 +64,13 @@ section nav {
 }
 
 #radius {
-    background-image: linear-gradient(#EFD9D1);
+    display: flex;
+    flex-wrap: wrap;
     filter: blur(1px);
 }
 
 .container {
     position: relative;
-    top: 20px;
     text-align: center;
 }
 
@@ -104,11 +105,13 @@ h1:hover, h1:active {
 /* start of about me section */
 main {
     margin: 0px;
-    padding: 200px;
+    padding: 180px;
     background-color: #FAEBE0;
+    column-count: 2;
 }
 
 .me {
+    margin-left: 150px;
     padding: 15px;
     padding-bottom: 50px;
     border: 1px solid var(--olive);
@@ -124,21 +127,22 @@ main {
 
 h2 {
     margin-top: 50px;
-    margin-right: 50px;
+    margin-right: 130px;
     float: right;
     color: var(--olive);
-    font-size: 6em;
+    font-size: 5em;
     text-align: center;
 }
 
 p {
     float: right;
+    margin-right: 130px;
     padding: 30px;
     color: #FAEBE0;
     background-color: var(--olive);
     font-size: 1em;
     text-align: center;
-    width: 600px;
+    width: 500px;
     font-family: American Typewriter, serif;
 }
 
@@ -204,44 +208,58 @@ button {
 }
 
 footer {
-    margin: 5px;
-    padding: 5px;
+    margin: 0px;
+    padding: 10px;
     text-align: center;
+    background-color: var(--brown); opacity: 0.85;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 200px) and (max-width: 900px) {
 /* start of nav*/
     .navbar {
         display: flex;
         flex-direction: column;
         padding: 5px ;
     }
-
 /* start of main*/
     h1 {
         display: flex;
         flex: wrap;
-        margin: 10px;
+        margin: 0px;
         padding: 20px;
-        font-size: 35px;
+        font-size: 25px;
     }
 /* about me*/
+    main {
+        padding: 80px;
+    }
+
     h2 {
         padding: 0px;
-        font-size: 45px;
+        font-size: 25px;
     }
 
     p {
-        padding: 20px;
-        width: 300px;
-        font-size: 15px;
+        padding: 15px;
+        width: 200px;
+        font-size: 13px;
+    }
+    .me {
+        margin-left: 0px;
+        height: 130px;
+        width: 130px;
+    }
+/* contact us */
+    h3 {
+        margin-left: 10px;
+        font-size: 45px;
     }
 
-}
-
-@media screen and (max-width: 600px) {
-    h1 {
-        padding: 20px;
-        font-size: 25px;
+    form ul{
+        font-size: 15px;
+    }
+    .box {
+        height: 10px;
+        width: 130px;
     }
 }
