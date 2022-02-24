@@ -4,8 +4,7 @@
 
 ✥ Hello! Welcome to my first portfolio. Below is a gif that will demonstrate a walk-through of the whole page.
 
-![how-to-gif](https://drive.google.com/uc?export=view&id=1bpUtWM_vI0lEyDn4dP20kneCedopfgww)
-
+![how](https://drive.google.com/uc?export=viw&id=1GYVEHa6V9ZQrKE_BhEPBh4K_By4S7m3d)
 ---
 
 ## Links
