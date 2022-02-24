@@ -2,10 +2,14 @@
 
 ## Introduction
 
-✥ Hello! Welcome to my first portfolio. Below is a gif that will demonstrate a walk-through of the whole page.
+✥ Hello! Welcome to my first portfolio. Shown below is a compilation of images of the page.
 
+![home](./img/homepage.png)
 
-![image](https://drive.google.com/uc?export=view&id=1pM3-de91vvWfL281_3_vqlBPgrx6wVEZ)
+![aboutme](./img/aboutme.png)
+
+![contact](./img/contactus.png)
+
 ---
 
 ## Links
